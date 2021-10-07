@@ -12,7 +12,7 @@ module.exports = {
         const member = interaction.options.getMember('target')
         const replyreason = String('Reason: '  + reason)
         const stringMember = String(member)
-        const dmReply = String('You have been warned in "TINYWAYS" for the following reason: ' + reason)
+        const dmReply = String('You have been warned in TinyWays for the following reason: ' + reason)
         const replyEmbed = new MessageEmbed()
             .setColor('AQUA')
             .setDescription(stringMember)
