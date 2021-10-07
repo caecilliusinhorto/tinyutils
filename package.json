@@ -1,0 +1,28 @@
+{
+  "name": "tinyutils",
+  "version": "1.4.2",
+  "description": "tiny utilities for a tiny server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"test\" && exit 1",
+    "start": "echo \"Starting Bot...\" && node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "tinyutils"
+  },
+  "author": "caecilliusinhorto",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/builders": "^0.6.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "discord-api-types": "^0.22.0",
+    "discord.js": "^13.1.0",
+    "get-json": "^1.0.1",
+    "isomorphic-unfetch": "^3.1.0",
+    "node-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0"
+  }
+}
