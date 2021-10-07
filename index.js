@@ -21,7 +21,7 @@ client.once('ready', () => {
 	console.log(version)
 	client.user.setActivity('TinyUtils v1.4.2', { type: 'PLAYING' }); 
 	const channel = client.channels.cache.get('883375611832320001')
-	channel.send('Bot online: v1.4.1')
+	channel.send('Bot online: v1.4.2')
 
 });
 
