@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-//TinyUtils discord bot version 1.4.2
+//TinyUtils discord bot version v1.4.2
 const { version } = require('./package.json')
 const fs = require('fs');
 const { Client, Collection, Intents } = require('discord.js');
