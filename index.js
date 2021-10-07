@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-//TinyUtils discord bot version 1.4.1
+//TinyUtils discord bot version 1.4.2
 const { version } = require('./package.json')
 const fs = require('fs');
 const { Client, Collection, Intents } = require('discord.js');
@@ -19,7 +19,7 @@ client.once('ready', () => {
 	console.log('Bot Ready:');
     console.log(client.user.username);
 	console.log(version)
-	client.user.setActivity('TinyUtils v1.4.1', { type: 'PLAYING' }); 
+	client.user.setActivity('TinyUtils v1.4.2', { type: 'PLAYING' }); 
 	const channel = client.channels.cache.get('883375611832320001')
 	channel.send('Bot online: v1.4.1')
 
