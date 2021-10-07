@@ -1,4 +1,5 @@
 # TinyUtils Discord bot
+*this is a discord bot for tinyways, an mc server*
 
 ## List of commands:
 `help` - Shows the help page

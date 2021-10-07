@@ -9,13 +9,14 @@ module.exports = {
         .setName('rocketlaunch')
         .setDescription('What is the next rocket launch?'),
     async execute(interaction) {
-        fetch(url, settings)
+/*        fetch(url, settings)
             .then(res => res.json())
             .then ((response) => {
                 const [list] = response
                 const missionname = list.name
                 const provider = list.provider.name
                 interaction.reply(missionname)
-            });
+            }); */
+        await interaction.reply("This is not complete yet")
     }
 };
