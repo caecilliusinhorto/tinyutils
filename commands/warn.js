@@ -10,14 +10,14 @@ module.exports = {
     async execute(interaction) {
         const reason = interaction.options.getString('reason')
         const member = interaction.options.getMember('target')
-        const replyreason = String('Reason: '  + reason)
+        const replyReason = String('Reason: '  + reason)
         const stringMember = String(member)
         const dmReply = String('You have been warned in TinyWays for the following reason: ' + reason)
         const replyEmbed = new MessageEmbed()
             .setColor('AQUA')
             .setDescription(stringMember)
             .setTitle('User has been warned.')
-            .setFooter(replyreason)
+            .setFooter(replyReason)
         if (interaction.member.permissions.has('BAN_MEMBERS')) {
             member.send(dmReply)
             await interaction.reply({ embeds: [replyEmbed] })
