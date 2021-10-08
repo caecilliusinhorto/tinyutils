@@ -20,7 +20,7 @@
 
 `meme` - the best memes from the internet
 
-`rick` - we do a little trolling
+`rick` - rickroll
 
 ~\~\~\~
 ## More features coming soon including:
