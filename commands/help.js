@@ -9,7 +9,7 @@ module.exports = {
         const helpEmbed = new MessageEmbed()
             .setColor('AQUA')
             .setTitle('Click here for a full list of commands!')
-            .setFooter('help for tinyutils v1.5.0 by blue')
+            .setFooter('help for tinyutils v1.6.0 by blue')
             .setURL('https://github.com/caecilliusinhorto/tinyutils#tinyutils-discord-bot')
         await interaction.reply({ embeds: [helpEmbed] });
     }
