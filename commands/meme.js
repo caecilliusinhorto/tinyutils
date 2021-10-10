@@ -22,7 +22,7 @@ module.exports = {
                 const permalink = post.data.permalink
                 const permalinkURL = String('https://www.reddit.com' + permalink)
                 const memeEmbed = new MessageEmbed()
-                    .setColor('DARK_BUT_NOT_BLACK')
+                    .setColor('AQUA')
                     .setTitle(title)
                     .setAuthor('r/memes')
                     .setImage(imageURL)
