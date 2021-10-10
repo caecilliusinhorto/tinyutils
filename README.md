@@ -26,12 +26,5 @@
 
 `youtube <search>` - Search youtube for a video
 
-~\~\~\~
-## More features coming soon including:
 
-- role verification
-
-- general utilities for connecting to the server
-
-\~\~\~
 
