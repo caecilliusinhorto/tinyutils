@@ -20,9 +20,9 @@
 
 `warn <user> <reason>` **Admin only** warns a user.
 
-`meme` - the best memes from the internet
+`meme` - Memes from r/memes
 
-`rick` - rickroll
+`rick` - Never Gonna Give You Up
 
 `youtube <search>` - Search youtube for a video
 
