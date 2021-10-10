@@ -24,6 +24,8 @@
 
 `rick` - rickroll
 
+`youtube <search>` - Search youtube for a video
+
 ~\~\~\~
 ## More features coming soon including:
 
