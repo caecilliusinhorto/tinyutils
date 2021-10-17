@@ -1,11 +1,12 @@
 {
   "name": "tinyutils",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "TinyUtils Discord bot",
   "main": "index.js",
   "scripts": {
     "test": "echo \"test\" && exit 1",
-    "start": "echo \"Starting Bot...\" && node ."
+    "start": "echo \"Starting Bot...\" && node .",
+    "deploy": "echo \"Deploying commands...\" && node deploy-commands.js"
   },
   "repository": {
     "type": "git",
