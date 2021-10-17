@@ -1,7 +1,7 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const fetch = require('isomorphic-unfetch')
 const { MessageEmbed } = require('discord.js')
-const url = "https://fdo.rocketlaunch.live/json/launches/next/5";
+let url = "https://fdo.rocketlaunch.live/json/launches/next/5.json";
 let settings = { method: "Get" };
 
 module.exports = {
@@ -9,14 +9,25 @@ module.exports = {
         .setName('rocketlaunch')
         .setDescription('What is the next rocket launch?'),
     async execute(interaction) {
-/*        fetch(url, settings)
+        fetch(url, settings)
             .then(res => res.json())
-            .then ((response) => {
-                const [list] = response
-                const missionname = list.name
-                const provider = list.provider.name
-                interaction.reply(missionname)
-            }); */
-        await interaction.reply("This is not complete yet")
+            .then((response) => {
+                const [list] = Array(response)
+                const [mission] = list.result
+                const replyEmbed = new MessageEmbed()
+                    .setTitle(mission.name)
+                    .setDescription(mission.launch_description)
+                    .addField('Vehicle', mission.vehicle.name)
+                    .addFields(
+                        { name: 'Provider', value: mission.provider.name, inline: true },
+                        { name: "Launchsite", value: mission.pad.location.name, inline: true },
+                        { name: "Country", value: mission.pad.location.country, inline: true }
+                    )
+                    .addField('Launch Day',mission.date_str)
+                    .setTimestamp()
+                    .setFooter("Data from rocketlaunch.live")
+                    .setColor("AQUA")
+                interaction.reply({ embeds: [replyEmbed] })
+            }); 
     }
-};
+}

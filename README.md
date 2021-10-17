@@ -26,5 +26,7 @@
 
 `youtube <search>` - Search youtube for a video
 
+`rocketlaunch` - Info for the next rocket launch
+
 
 
