@@ -1,9 +1,22 @@
 /* eslint-disable no-unused-vars */
-//TinyUtils discord bot version v1.7.0
-const { version } = require('./package.json')
 const fs = require('fs');
 const { Client, Collection, Intents } = require('discord.js');
+const { version } = require('./package.json')
 const { token } = require('./config.json');
+const startupMessage = 'Bot online: ' + version
+const activity = "TinyUtils v" + version
+const { botChannel } = require('./config.json')
+/*These values are in config.json which should look something like this:
+{
+	"token":"your bot token here",
+	"clientId": "your client ID here",
+	"guildId": "your guild ID here",
+	"apiKey": "your youtube api key here",
+	"botChannel": "channel for bot messages",
+	"memberRole": "role for verified members",
+	"mutedRole": "role for muted members"
+}
+*/
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] })
 
@@ -19,9 +32,9 @@ client.once('ready', () => {
 	console.log('Bot Ready:');
     console.log(client.user.username);
 	console.log(version)
-	client.user.setActivity('TinyUtils v1.7.0', { type: 'PLAYING' }); 
-	const channel = client.channels.cache.get('883375611832320001')
-	channel.send('Bot online: v1.7.0')
+	client.user.setActivity(activity, { type: 'PLAYING' }); 
+	const channel = client.channels.cache.get(botChannel)
+	channel.send(startupMessage)
 
 });
 
