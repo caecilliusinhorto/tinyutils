@@ -13,7 +13,13 @@
 }
 ```
 ## Step 2
-To start the bot, run
+To install dependancies, run:
+```bash
+npm i
+```
+
+## Step 3
+To start the bot, run:
 ```bash
 npm start
 ```
