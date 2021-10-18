@@ -1,5 +1,7 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed } = require('discord.js');
+const { memberRole } = require('../config.json')
+//See index.js for what values should be in config.json
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -14,7 +16,7 @@ module.exports = {
             .setDescription(StringMember)
             .setFooter('This means you can talk now, head to a channel and have fun!')
             .setImage(interaction.user.displayAvatarURL({ dynamic: true }))
-        member.roles.add('879817525607673877')
+        member.roles.add(memberRole)
         await interaction.reply({ embeds: [replyEmbed] });
     },
 };

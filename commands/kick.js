@@ -8,8 +8,8 @@ module.exports = {
     async execute(interaction) {
         const member = interaction.options.getMember('target');
         if (interaction.member.permissions.has("BAN_MEMBERS")) {
-            stringMember = String(member)
-            member.send("You have been kicked from TinyWays.")
+            const stringMember = String(member)
+            member.send("You have been kicked.")
             member.kick(member);
             const replyEmbed = new MessageEmbed()
                 .setColor("AQUA")

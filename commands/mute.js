@@ -1,6 +1,8 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed } = require('discord.js');
-const { execute } = require('./meme.js') 
+//See index.js for what values should be in config.json
+const { memberRole } = require('../config.json')
+const { mutedRole } = require('../config.json')
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -10,10 +12,10 @@ module.exports = {
     async execute(interaction) {
         const member = interaction.options.getMember('target');
         if (interaction.member.permissions.has('BAN_MEMBERS')) {
-            stringMember = String(member)
-            member.send("You have been muted in TinyWays.")
-            member.roles.remove('879817525607673877');
-            member.roles.add('880872655174111302');
+            const stringMember = String(member)
+            member.send("You have been muted.")
+            member.roles.remove(memberRole);
+            member.roles.add(mutedRole);
             const replyEmbed = new MessageEmbed()
                 .setColor("AQUA")
                 .setTitle('Successfully muted member. To unmute them please use /unmute.')

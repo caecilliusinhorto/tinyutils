@@ -1,6 +1,9 @@
 // This is literally just recycled code from mute but with the name changed.
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed } = require('discord.js')
+//See index.js for what values should be in config.json
+const { mutedRole } = require('../config.json')
+const { memberRole } = require('../config.json')
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -10,10 +13,10 @@ module.exports = {
     async execute(interaction) {
         const member = interaction.options.getMember('target');
         if (interaction.member.permissions.has('BAN_MEMBERS')) {
-            stringMember = String(member)
-            member.send('You have been unmuted in TinyWays.')
-            member.roles.remove('880872655174111302');
-            member.roles.add('879817525607673877');
+            const stringMember = String(member)
+            member.send('You have been unmuted.')
+            member.roles.remove(mutedRole);
+            member.roles.add(memberRole);
             const replyEmbed = new MessageEmbed()
                 .setColor("AQUA")
                 .setTitle('Successfully unmuted member.')

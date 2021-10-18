@@ -1,3 +1,4 @@
+//See index.js for what values should be in config.json
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const YouTube = require("discord-youtube-api");
 const { apiKey } = require('../config.json');
