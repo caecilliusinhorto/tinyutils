@@ -20,11 +20,11 @@
 
 `warn <user> <reason>` **Admin only** warns a user.
 
-`meme` - Memes from r/memes
+`meme` - Memes (from r/memes on reddit)
 
 `rick` - Never Gonna Give You Up
 
-`youtube <search>` - Search youtube for a video
+`youtube <search>` - Search youtube for a video 
 
-`rocketlaunch` - Info for the next rocket launch
+`rocketlaunch` - Info for the next rocket launch (data from rocketlaunch.live)
 
