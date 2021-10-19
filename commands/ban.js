@@ -9,13 +9,12 @@ module.exports = {
     async execute(interaction) {
         const member = interaction.options.getMember('target');
         if (interaction.member.permissions.has("BAN_MEMBERS")) {
-            const stringMember = String(member)
             member.send("You have been banned.")
             member.ban(member);
             const replyEmbed = new MessageEmbed()
                 .setColor("AQUA")
                 .setTitle('Successfully banned member.')
-                .setDescription(stringMember)
+                .setDescription(String(member))
             await interaction.reply({ embeds: [replyEmbed] });
         }
         else {

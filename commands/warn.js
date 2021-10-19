@@ -10,16 +10,13 @@ module.exports = {
     async execute(interaction) {
         const reason = interaction.options.getString('reason')
         const member = interaction.options.getMember('target')
-        const replyReason = String('Reason: '  + reason)
-        const stringMember = String(member)
-        const dmReply = String('You have been warned for the following reason: ' + reason)
         const replyEmbed = new MessageEmbed()
             .setColor('AQUA')
-            .setDescription(stringMember)
+            .setDescription(String(member))
             .setTitle('User has been warned.')
-            .setFooter(replyReason)
+            .setFooter('Reason:' + reason)
         if (interaction.member.permissions.has('BAN_MEMBERS')) {
-            member.send(dmReply)
+            member.send('You have recieved a warning for the following reason:' + reason)
             await interaction.reply({ embeds: [replyEmbed] })
         } else {
             await interaction.reply('You do not have the required permissions to execute this command.')

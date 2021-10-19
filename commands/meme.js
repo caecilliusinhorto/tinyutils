@@ -15,19 +15,13 @@ module.exports = {
             .then((response) => {
                 const [list] = response 
                 const [post] = list.data.children; 
-                const memeAuthor = post.data.author
-                const title = post.data.title
-                const imageURL = String(post.data.url);
-                const fullAuthor = String('u/' + memeAuthor) //this is the only way i can think of to get a proper reddit style username 
-                const permalink = post.data.permalink
-                const permalinkURL = String('https://www.reddit.com' + permalink)
                 const memeEmbed = new MessageEmbed()
                     .setColor('AQUA')
-                    .setTitle(title)
+                    .setTitle(post.data.title)
                     .setAuthor('r/memes')
-                    .setImage(imageURL)
-                    .setDescription(fullAuthor)
-                    .setURL(permalinkURL)
+                    .setImage(post.data.url)
+                    .setDescription('u/' + post.data.author)
+                    .setURL('https://www.reddit.com' + post.data.permalink)
                     .setFooter('Click on title to view Reddit post')
                 interaction.reply({ embeds: [memeEmbed] });
             });
