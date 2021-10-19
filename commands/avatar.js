@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
-
+// This is NOT my code, this is from the discord.js example repo
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('avatar')
