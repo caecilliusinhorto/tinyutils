@@ -1,4 +1,5 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
+const { MessageEmbed } = require('discord.js')
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -9,7 +10,7 @@ module.exports = {
         const member = interaction.options.getMember('target');
         if (interaction.member.permissions.has("BAN_MEMBERS")) {
             member.send("You have been kicked.")
-            member.kick(member);
+            await member.kick(member);
             const replyEmbed = new MessageEmbed()
                 .setColor("AQUA")
                 .setTitle('Successfully kicked member.')

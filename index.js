@@ -3,9 +3,11 @@ const fs = require('fs');
 const { Client, Collection, Intents } = require('discord.js');
 const { version } = require('./package.json')
 const { token } = require('./config.json');
-const startupMessage = 'Bot online: ' + version
+const startupMessage = 'Bot online \nVersion ' + version
 const activity = "TinyUtils v" + version
 const { botChannel } = require('./config.json')
+const { welcomeChannel } = require('./config.json')
+const { welcomeMessage } = require('./config.json')
 /*These values are in config.json which should look something like this:
 {
 	"token":"your bot token here",
@@ -38,6 +40,8 @@ client.once('ready', () => {
 
 });
 
+	
+
 client.on('interactionCreate', async interaction => {
 	if (!interaction.isCommand()) return;
 
@@ -54,5 +58,6 @@ client.on('interactionCreate', async interaction => {
 		await interaction.reply({ content: 'Something went wrong. Please start a support ticket and specify which command caused an error.', ephemeral: true });
 	}
 });
+
 
 client.login(token);
