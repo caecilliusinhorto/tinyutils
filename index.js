@@ -6,8 +6,7 @@ const { token } = require('./config.json');
 const startupMessage = 'Bot online \nVersion ' + version
 const activity = "TinyUtils v" + version
 const { botChannel } = require('./config.json')
-const { welcomeChannel } = require('./config.json')
-const { welcomeMessage } = require('./config.json')
+
 /*These values are in config.json which should look something like this:
 {
 	"token":"your bot token here",
