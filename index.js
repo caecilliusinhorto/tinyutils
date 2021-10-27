@@ -18,7 +18,10 @@ const { botChannel } = require('./config.json')
 }
 */
 
-const client = new Client({ intents: [Intents.FLAGS.GUILDS] })
+const client = new Client({
+	partials: ['USER', 'CHANNEL', 'GUILD_MEMBER', 'MESSAGE', 'REACTION'],
+	intents: ['GUILDS', 'GUILD_MEMBERS', 'GUILD_VOICE_STATES', 'GUILD_MESSAGES']
+});
 
 
 client.commands = new Collection();
@@ -48,7 +51,7 @@ client.on('interactionCreate', async interaction => {
 	if (!command) return;
 
 	try {
-		await command.execute(interaction);
+		await command.execute(interaction, client);
 	} catch (error) {
 		console.error(error);
 		await interaction.reply({ content: 'Something went wrong. Please start a support ticket and specify which command caused an error.', ephemeral: true });
