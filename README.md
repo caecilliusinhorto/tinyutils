@@ -26,6 +26,8 @@
 
 `youtube <search>` - Search youtube for a video 
 
+`hexcode <code>` - returns the colour for a hex colour code
+
 `rocketlaunch` - Info for the next rocket launch (data from rocketlaunch.live)
 
 ### CLI commands:
