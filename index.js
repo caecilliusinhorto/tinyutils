@@ -29,17 +29,48 @@ for (const file of commandFiles) {
 	client.commands.set(command.data.name, command);
 }
 
+
+
+//Command line interface
+var readline = require('readline')
+var rl = readline.createInterface({
+	input: process.stdin,
+	output: process.stdout
+});
+function interface() {
+	rl.question("> ", function (a) {
+		if (a === "help") {
+			console.log("All possible commands: \n help - shows this page \n status - show bot status \n stop - stop the bot")
+			interface()
+		} if (a === "stop") {
+			console.log("Stopped Bot")
+			rl.close();
+			process.exit()
+		} if (a === "status") {
+			console.log("Bot is online: \n Version: " + version + "\n Username: " + client.user.username + "\n Startup message channel: " + botChannel)
+			interface()
+		} else if (a !== "help") {
+			console.log("Invalid Command: " + a)
+			interface()
+		}
+	});
+
+}
+
+//Startup
+
 client.once('ready', () => {
 	console.log('Bot Ready:');
-    console.log(client.user.username);
+	console.log(client.user.username);
 	console.log(version)
-	client.user.setActivity(activity, { type: 'PLAYING' }); 
+	client.user.setActivity(activity, { type: 'PLAYING' });
 	const channel = client.channels.cache.get(botChannel)
 	channel.send(startupMessage)
-
+	console.log("Welcome to Tinyutils!  Type \"help\" for more. \n")
+	interface()
 });
 
-	
+//Interaction Handling
 
 client.on('interactionCreate', async interaction => {
 	if (!interaction.isCommand()) return;
