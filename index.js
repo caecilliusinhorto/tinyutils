@@ -85,7 +85,7 @@ client.on('interactionCreate', async interaction => {
 		await command.execute(interaction);
 	} catch (error) {
 		console.error(error);
-		await interaction.reply({ content: 'Something went wrong. Please start a support ticket and specify which command caused an error.', ephemeral: true });
+		await interaction.reply({ content: 'Something went wrong. If the issue persists, please submit an issue.', ephemeral: true });
 	}
 });
 

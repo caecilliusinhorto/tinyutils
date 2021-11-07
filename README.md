@@ -2,7 +2,7 @@
 
 
 ## List of commands:
-`help` - Shows the help page
+`help` - Shows the README
 
 `verify` - Verification for new users.
 
