@@ -31,7 +31,10 @@
 `rocketlaunch` - Info for the next rocket launch (data from rocketlaunch.live)
 
 ### CLI commands:
+
 `help` - show all CLI commands
+
 `status` - show bot status
+
 `stop` - stop the bot
 
