@@ -1,6 +1,6 @@
 {
   "name": "tinyutils",
-  "version": "1.9.0",
+  "version": "1.9.1",
   "description": "TinyUtils Discord bot",
   "main": "index.js",
   "scripts": {
