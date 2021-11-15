@@ -1,6 +1,7 @@
 ## TinyUtils discord bot
 
 ### Help
+
 ****Command****|****Args****|****Usage****
 :-----:|:-----:|:-----:
 help| |Shows this page
