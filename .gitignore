@@ -2,4 +2,4 @@ node_modules
 config.json
 .eslintrc.json
 deploy-commands.js
-test.js
+commands/test.js
