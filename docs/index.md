@@ -1,5 +1,12 @@
 ## TinyUtils discord bot
 
+This bot was originally made for the TinyWays Discord server
+
+Made using discord.js
+
+
+All commands are slash commands, no prefix commands.
+
 ### Help
 
 ****Command****|****Args****|****Usage****
@@ -22,3 +29,13 @@ rocketlaunch| |Shows the next rocket launch using rocketlaunch.live
 
 ### Upcoming features:
 - Music (unlikely)
+
+### Screenshots:
+
+![image](https://user-images.githubusercontent.com/88711587/141836015-a8a70038-0fb8-4766-a844-41e5abe9f55b.png)
+
+![image](https://user-images.githubusercontent.com/88711587/141836171-13967819-b826-4040-89b0-ab74380c3391.png)
+
+![image](https://user-images.githubusercontent.com/88711587/141836258-b1372c33-591b-418f-b7f3-d022ab0689d8.png)
+
+
