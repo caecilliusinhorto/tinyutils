@@ -1,5 +1,6 @@
 # TinyUtils Discord bot
 
+https://caecilliusinhorto.github.io/tinyutils/
 
 ## List of commands:
 `help` - Shows the README
