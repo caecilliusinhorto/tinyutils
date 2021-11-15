@@ -10,8 +10,9 @@ module.exports = {
         const helpEmbed = new MessageEmbed()
             .setColor('AQUA')
             .setTitle('Click here for a full list of commands!')
-            .setFooter('help for tinyutils v' + version + ' by caecilliusinhorto')
-            .setURL('https://github.com/caecilliusinhorto/tinyutils#tinyutils-discord-bot')
+            .setFooter('help for tinyutils v' + version + ' by hello_and_goodbye#3114')
+            .setURL('https://github.com/caecilliusinhorto/tinyutils/blob/main/README.md')
+            .setImage('https://github.com/caecilliusinhorto/tinyutils/blob/main/profile.png')
         await interaction.reply({ embeds: [helpEmbed] });
     }
 }
