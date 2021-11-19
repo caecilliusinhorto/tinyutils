@@ -31,6 +31,8 @@ https://caecilliusinhorto.github.io/tinyutils/
 
 `rocketlaunch` - Info for the next rocket launch (data from rocketlaunch.live)
 
+`calc` - Evaluate a mathematical expression
+
 ### CLI commands:
 
 `help` - show all CLI commands
