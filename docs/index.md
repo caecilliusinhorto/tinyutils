@@ -24,7 +24,7 @@ rick| |Rickroll
 youtube|search|Search youtube for a video.
 hexcode|code|Returns a colour for a hexcode using colorhexa.com
 rocketlaunch| |Shows the next rocket launch using rocketlaunch.live
-calc | value | Evaluate a mathematical expression
+calc | value | Evaluate a mathematical expression or convert between units
 
 \* \- *An admin is anyone with the BAN_MEMBERS permission*
 
@@ -38,5 +38,8 @@ calc | value | Evaluate a mathematical expression
 ![image](https://user-images.githubusercontent.com/88711587/141836171-13967819-b826-4040-89b0-ab74380c3391.png)
 
 ![image](https://user-images.githubusercontent.com/88711587/141836258-b1372c33-591b-418f-b7f3-d022ab0689d8.png)
+
+![image](https://user-images.githubusercontent.com/88711587/142721780-793da549-fec8-4644-abdc-398477124d08.png)
+
 
 
