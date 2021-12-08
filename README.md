@@ -31,7 +31,7 @@ https://caecilliusinhorto.github.io/tinyutils/
 
 `rocketlaunch` - Info for the next rocket launch (data from rocketlaunch.live)
 
-`calc` - Evaluate a mathematical expression
+`calc` - Evaluate a mathematical expression or convert between units
 
 ### CLI commands:
 
