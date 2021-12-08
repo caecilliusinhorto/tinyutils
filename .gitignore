@@ -3,3 +3,4 @@ config.json
 .eslintrc.json
 deploy-commands.js
 commands/test.js
+commands/alt-verify.md
