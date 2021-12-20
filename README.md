@@ -33,6 +33,8 @@ https://caecilliusinhorto.github.io/tinyutils/
 
 `calc` - Evaluate a mathematical expression or convert between units
 
+`reddit` - fetch something from reddit 
+
 ### CLI commands:
 
 `help` - show all CLI commands

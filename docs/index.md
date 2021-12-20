@@ -25,6 +25,7 @@ youtube|search|Search youtube for a video.
 hexcode|code|Returns a colour for a hexcode using colorhexa.com
 rocketlaunch| |Shows the next rocket launch using rocketlaunch.live
 calc | value | Evaluate a mathematical expression or convert between units
+reddit | subreddit | Fetch a random post from a subreddit of your choosing (no nsfw)
 
 \* \- *An admin is anyone with the BAN_MEMBERS permission*
 
