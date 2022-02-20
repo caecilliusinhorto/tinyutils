@@ -20,8 +20,8 @@ module.exports = {
                     .setTitle(post.data.title)
                     .setAuthor('r/memes')
                     .setImage(post.data.url)
-                    .setDescription('u/' + post.data.author)
-                    .setURL('https://www.reddit.com' + post.data.permalink)
+                    .setDescription(`u/${post.data.author}`)
+                    .setURL(`https://www.reddit.com/${post.data.permalink}`)
                     .setFooter('Click on title to view Reddit post')
                 interaction.reply({ embeds: [memeEmbed] });
             });

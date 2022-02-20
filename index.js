@@ -3,8 +3,6 @@ const fs = require('fs');
 const { Client, Collection, Intents } = require('discord.js');
 const { version } = require('./package.json')
 const { token } = require('./config.json');
-const startupMessage = 'Bot online \nVersion ' + version
-const activity = "TinyUtils v" + version
 const { botChannel } = require('./config.json')
 
 /*These values are in config.json which should look something like this:
@@ -47,7 +45,7 @@ function interface() {
 			rl.close();
 			process.exit()
 		} if (a === "status") {
-			console.log("Bot is online: \n Version: " + version + "\n Username: " + client.user.username + "\n Startup message channel: " + botChannel)
+			console.log(`Bot is online\n Version: ${version}\n Username: ${client.user.username}\n Startup Message Channel: ${botChannel}`)
 			interface()
 		} else if (a !== "help") {
 			console.log("Invalid Command: " + a)
@@ -63,9 +61,9 @@ client.once('ready', () => {
 	console.log('Bot Ready:');
 	console.log(client.user.username);
 	console.log(version)
-	client.user.setActivity(activity, { type: 'PLAYING' });
+	client.user.setActivity(`tinyutils v${version}`, { type: 'PLAYING' });
 	const channel = client.channels.cache.get(botChannel)
-	channel.send(startupMessage)
+	channel.send(`Bot online: tinyutils version v${version}`)
 	console.log("Welcome to Tinyutils!  Type \"help\" for more. \n")
 	interface()
 });

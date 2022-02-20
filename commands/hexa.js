@@ -12,7 +12,7 @@ module.exports = {
             const reply = new MessageEmbed()
                 .setTitle('#' + search)
                 .setColor('AQUA')
-                .setImage('https://www.colorhexa.com/' + search + '.png')
+                .setImage(`https://www.colorhexa.com/${search}.png`)
             await interaction.reply({ embeds: [reply] })
         } catch (err) {
             interaction.reply("Invalid code. Please make sure it is in hex form.")

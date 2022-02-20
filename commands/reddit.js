@@ -12,7 +12,7 @@ module.exports = {
         .addStringOption(option => option.setName('subreddit').setDescription('Subreddit name, e.g. r/memes')),
     async execute(interaction) {
         const subreddit = interaction.options.getString('subreddit')
-        const url = "https://www.reddit.com/" + subreddit + "/random.json";
+        const url = `https://www.reddit.com/${subreddit}/random.json`;
         fetch(url, settings)
             .then(res => res.json())
             .then((response) => {
@@ -26,7 +26,7 @@ module.exports = {
                         .setAuthor(subreddit)
                         .setImage(post.data.url)
                         .setDescription('u/' + post.data.author)
-                        .setURL('https://www.reddit.com' + post.data.permalink)
+                        .setURL(`https://www.reddit.com/${post.data.permalink}`)
                         .setFooter('Click on title to view Reddit post')
                     interaction.reply({ embeds: [replyEmbed] });
                 } else {

@@ -16,7 +16,7 @@ module.exports = {
             .setTitle('User has been warned.')
             .setFooter('Reason:' + reason)
         if (interaction.member.permissions.has('BAN_MEMBERS')) {
-            member.send('You have recieved a warning for the following reason:' + reason)
+            member.send(`You have recieved a warning for the following reason: ${reason}`)
             await interaction.reply({ embeds: [replyEmbed] })
         } else {
             await interaction.reply('You do not have the required permissions to execute this command.')
