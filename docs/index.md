@@ -20,7 +20,7 @@ mute|user|Mutes user by removing member rank and adding muted rank, admin only *
 unmute|user|unmutes user by doing reverse of mute, admin only *
 warn|user, reason|warns a user, sending them a DM copy of the warning too. Admin only. *
 meme| |Random meme from r/memes
-rick| |Rickroll
+rick| |Never Gonna Give You Up
 youtube|search|Search youtube for a video.
 hexcode|code|Returns a colour for a hexcode using colorhexa.com
 rocketlaunch| |Shows the next rocket launch using rocketlaunch.live
