@@ -26,6 +26,7 @@ hexcode|code|Returns a colour for a hexcode using colorhexa.com
 rocketlaunch| |Shows the next rocket launch using rocketlaunch.live
 calc | value | Evaluate a mathematical expression or convert between units
 reddit | subreddit | Fetch a random post from a subreddit of your choosing (no nsfw)
+wiki | search | Search wikipedia for articles
 
 \* \- *An admin is anyone with the BAN_MEMBERS permission*
 
@@ -42,5 +43,5 @@ reddit | subreddit | Fetch a random post from a subreddit of your choosing (no n
 
 ![image](https://user-images.githubusercontent.com/88711587/142721780-793da549-fec8-4644-abdc-398477124d08.png)
 
-
+![image](https://cdn.discordapp.com/attachments/883375611832320001/966032610478403634/unknown.png)
 

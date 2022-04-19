@@ -35,6 +35,8 @@ https://caecilliusinhorto.github.io/tinyutils/
 
 `reddit` - fetch something from reddit 
 
+`wiki` - Get articles from wikipedia
+
 ### CLI commands:
 
 `help` - show all CLI commands
