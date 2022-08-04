@@ -18,12 +18,11 @@ module.exports = {
             .then((response) => {
                 const [list] = response
                 const [post] = list.data.children;
-                const nsfw = post.data.over_18;
-                if (nsfw === false) {
+                if (post.data.over_18 == false) {
                     const replyEmbed = new MessageEmbed()
                         .setColor('AQUA')
                         .setTitle(post.data.title)
-                        .setAuthor(subreddit)
+                        .setAuthor(`r/${post.data.subreddit}`)
                         .setImage(post.data.url)
                         .setDescription('u/' + post.data.author)
                         .setURL(`https://www.reddit.com/${post.data.permalink}`)

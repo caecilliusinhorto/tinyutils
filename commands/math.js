@@ -17,9 +17,8 @@ module.exports = {
                 .setColor("AQUA")
             await interaction.reply({ embeds: [embed] });
         } catch (err) {
-            const reply = "There was an error"
             const embed = new MessageEmbed()
-                .setTitle(reply)
+                .setTitle("There was an error.")
                 .setFooter(value)
                 .setAuthor("Please try again")
                 .setColor("AQUA")
