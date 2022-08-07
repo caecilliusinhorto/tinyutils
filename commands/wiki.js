@@ -14,17 +14,15 @@ module.exports = {
             .then((response) => {
                 const [data] = Array(response);
                 const [list] = Array(data[3])
-                const link1 = list[0]
-                const link2 = list[1]
-                const link3 = list[2]
-                const link4 = list[3]
-                const otherlinks = String(link2 + " " + link3 + " " + link4)
+                const otherlinks = String(list[1] + " " + list[2] + " " + list[3])
                 const replyEmbed = new MessageEmbed()
                     .setColor("AQUA")
                     .setTitle("Other possible articles:")
                     .setDescription(otherlinks)
-                interaction.reply(link1)
-                interaction.followUp({ embeds: [replyEmbed] })
+                interaction.reply(list[0])
+                if (list[1] != null) {
+                    interaction.followUp({ embeds: [replyEmbed] })
+                }
             })
     },
 };
