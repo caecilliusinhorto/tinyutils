@@ -5,8 +5,8 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName('warn')
         .setDescription('Set a warning')
-        .addUserOption(option => option.setName('target').setDescription('Target to warn'))
-        .addStringOption(option => option.setName('reason').setDescription('Please provide a reason')),
+        .addUserOption(option => option.setName('target').setDescription('Target to warn').setRequired(true))
+        .addStringOption(option => option.setName('reason').setDescription('Please provide a reason').setRequired(true)),
     async execute(interaction) {
         const reason = interaction.options.getString('reason')
         const member = interaction.options.getMember('target')

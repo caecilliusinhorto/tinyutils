@@ -9,7 +9,7 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName('unmute')
         .setDescription('Unmute a specified user.')
-        .addUserOption(option => option.setName('target').setDescription('The user you want to unmute.')),
+        .addUserOption(option => option.setName('target').setDescription('The user you want to unmute.').setRequired(true)),
     async execute(interaction) {
         const member = interaction.options.getMember('target');
         if (interaction.member.permissions.has('BAN_MEMBERS')) {

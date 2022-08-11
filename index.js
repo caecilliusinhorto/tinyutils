@@ -61,10 +61,10 @@ client.once('ready', () => {
 	console.log('Bot Ready:');
 	console.log(client.user.username);
 	console.log(version)
-	client.user.setActivity(`tinyutils v${version}`, { type: 'PLAYING' });
+	client.user.setActivity(`tinyutils v${version} | /help`, { type: 'PLAYING' });
 	const channel = client.channels.cache.get(botChannel)
 	channel.send(`Bot online: tinyutils version v${version}`)
-	console.log("Welcome to Tinyutils!  Type \"help\" for more. \n")
+	console.log("\"help\" for commands. \n")
 	interface()
 });
 

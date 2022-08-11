@@ -6,7 +6,7 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName('calc')
         .setDescription('Calculate a mathematical expression')
-        .addStringOption(option => option.setName('value').setDescription('What to calculate')),
+        .addStringOption(option => option.setName('value').setDescription('What to calculate').setRequired(true)),
     async execute(interaction) {
         const value = interaction.options.getString('value');
         try {

@@ -5,7 +5,7 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName('kick')
         .setDescription('Kick a specified user.')
-        .addUserOption(option => option.setName('target').setDescription('The user to kick')),
+        .addUserOption(option => option.setName('target').setDescription('The user to kick').setRequired(true)),
     async execute(interaction) {
         const member = interaction.options.getMember('target');
         if (interaction.member.permissions.has("BAN_MEMBERS")) {
