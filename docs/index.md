@@ -9,7 +9,7 @@ All commands are slash commands, no prefix commands.
 
 ### Help
 
-****Command****|****Args****|****Usage****
+**Command**|**Options**|**Usage**
 :-----:|:-----:|:-----:
 help| |Shows this page
 verify| |Verifies new user with member rank
@@ -27,6 +27,7 @@ rocketlaunch| |Shows the next rocket launch using rocketlaunch.live
 calc | value | Evaluate a mathematical expression or convert between units
 reddit | subreddit | Fetch a random post from a subreddit of your choosing (no nsfw)
 wiki | search | Search wikipedia for articles
+chess | user | Show the most recent game a chess.com user played this month
 
 \* \- *An admin is anyone with the BAN_MEMBERS permission*
 

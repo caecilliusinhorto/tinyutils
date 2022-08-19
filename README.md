@@ -37,6 +37,8 @@ https://caecilliusinhorto.github.io/tinyutils/
 
 `wiki` - Get articles from wikipedia
 
+`chess` - Get the most recent game a chess.com player played this month
+
 ### CLI commands:
 
 `help` - show all CLI commands
