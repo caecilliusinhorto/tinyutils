@@ -38,8 +38,6 @@ chess | user | Show the most recent game a chess.com user played this month
 
 ![image](https://user-images.githubusercontent.com/88711587/141836015-a8a70038-0fb8-4766-a844-41e5abe9f55b.png)
 
-![image](https://user-images.githubusercontent.com/88711587/141836171-13967819-b826-4040-89b0-ab74380c3391.png)
-
 ![image](https://user-images.githubusercontent.com/88711587/141836258-b1372c33-591b-418f-b7f3-d022ab0689d8.png)
 
 ![image](https://user-images.githubusercontent.com/88711587/142721780-793da549-fec8-4644-abdc-398477124d08.png)
