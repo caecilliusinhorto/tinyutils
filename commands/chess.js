@@ -36,7 +36,7 @@ module.exports = {
                     result = "Black won by resignation"
                 } else if (game.black.result == "win" && game.white.result == "timeout") {
                     result = "Black won by timeout"
-                } else if (game.black.result == "win" && game.white.result == abandoned) {
+                } else if (game.black.result == "win" && game.white.result == "abandoned") {
                     result = "Black won by abandonment"
                 } else {
                     result = "n/a" 
