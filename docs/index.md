@@ -26,8 +26,9 @@ hexcode|code|Returns a colour for a hexcode using colorhexa.com
 rocketlaunch| |Shows the next rocket launch using rocketlaunch.live
 calc | value | Evaluate a mathematical expression or convert between units
 reddit | subreddit | Fetch a random post from a subreddit of your choosing (no nsfw)
-wiki | search | Search wikipedia for articles
+wiki | search, language | Search wikipedia for articles
 chess | user | Show the most recent game a chess.com user played this month
+showcode | command | show the code for a command
 
 \* \- *An admin is anyone with the BAN_MEMBERS permission*
 
