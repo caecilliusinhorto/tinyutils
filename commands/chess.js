@@ -1,7 +1,6 @@
 const { SlashCommandBuilder, Embed } = require('@discordjs/builders');
 const fetch = require('isomorphic-unfetch')
 const { MessageEmbed } = require('discord.js');
-const { e } = require('mathjs');
 const settings = { method: "Get" };
 
 
@@ -30,7 +29,7 @@ module.exports = {
                 } else if (game.white.result == "stalemate" || game.black.result == "stalemate") {
                     result = "Stalemate"
                 } else if (game.white.result == "agreed" || game.black.result == "agreed"){
-                    result = "Draw"
+                    result = "Draw by agreement"
                 } else if (game.black.result == "win" && game.white.result == "checkmated") {
                     result = "Black won by checkmate"
                 } else if (game.black.result == "win" && game.white.result == "resigned") {
@@ -40,8 +39,8 @@ module.exports = {
                 } else if (game.black.result == "win" && game.white.result == abandoned) {
                     result = "Black won by abandonment"
                 } else {
-                    result = "n/a"
-                }
+                    result = "n/a" 
+                } // super messy and not always functional, but whatever!
                 const replyEmbed = new MessageEmbed()
                     .setTitle(`${game.white.username} vs. ${game.black.username}`)
                     .addFields(

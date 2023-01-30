@@ -15,6 +15,7 @@ module.exports = {
             .then((response) => {
                 const [list] = response 
                 const [post] = list.data.children; 
+                if (post.data.over_18 == false) {
                 const memeEmbed = new MessageEmbed()
                     .setColor('AQUA')
                     .setTitle(post.data.title)
@@ -24,6 +25,14 @@ module.exports = {
                     .setURL(`https://www.reddit.com/${post.data.permalink}`)
                     .setFooter('Click on title to view Reddit post')
                 interaction.reply({ embeds: [memeEmbed] });
+                } else {
+                    const replyEmbed = new MessageEmbed()
+                        .setColor('AQUA')
+                        .setTitle("Oops...")
+                        .setDescription("That post was NSFW... Please try again to get a safe one!")
+                    interaction.reply({ embeds: [replyEmbed] })
+                }
+
             });
     }
 }
